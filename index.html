@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cargar la libreria Boostrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Catalogo tecnopata</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="text-white bg-dark text-center p-4">
+        <h1>Tecnopatia</h1> <!-- Titulo 1 -->
+        <h2>Tecnologia al alcance de tu mano</h2> <!-- Titulo 2 -->
+    </header>
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#ventanaCarrito">Carrito</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- VENTANA DEL CARRITO -->
+    <div id="ventanaCarrito" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Su carrito esta actualmente vacio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">Limpiar</button>
+                    <button type="button" class="btn btn-primary">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificacion -->
+    <div id="notificacion">Ventas de producto catalogo Marzo 2023</div> <!-- Parrafo -->
+
+    <!-- Parte principal-->
+    <main class="container">
+
+        <!-- Seccion de catalogo -->
+        <section id="catalogo" class="row">
+
+            <!-- Articulo 01-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/xiaomi-camara.jpg" alt="Camara web">
+                </picture>
+
+                <h3>Xiaomi Camara Web Full HD 1080p</h3>
+                <p>
+                    <span class="precioOriginal">s/ 249.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 124.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 02-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/Apple Magic 3.jpg" alt="Mouse">
+                </picture>
+
+                <h3>Apple Magic Mouse 3 Negro</h3>
+                <p>
+                    <span class="precioOriginal">s/ 659.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 329.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 03-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/Disco Duro WD 2TB.jpg" alt="Disco Duro">
+                </picture>
+
+                <h3>Disco Duro Externo WD 2TB</h3>
+                <p>
+                    <span class="precioOriginal">s/ 599.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 299.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 04-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/teclado logitec k20.jpg" alt="Teclado">
+                </picture>
+
+                <h3>Logitech K120</h3>
+                <p>
+                    <span class="precioOriginal">s/ 99.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 49.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 05-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/USB kingston 32gb.webp" alt="USB">
+                </picture>
+
+                <h3>Memoria USB Kingston 32GB</h3>
+                <p>
+                    <span class="precioOriginal">s/ 49.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 23.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 06-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/monitor lenovo.webp" alt="Monitor">
+                </picture>
+
+                <h3>Monitor curvo Lenovo 27 pulgadas</h3>
+                <p>
+                    <span class="precioOriginal">s/ 2599.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 1299.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 07-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/monitor thinkvision.webp" alt="Monitor">
+                </picture>
+
+                <h3>ThinkVision T24m-20 23.8 pulgadas</h3>
+                <p>
+                    <span class="precioOriginal">s/ 2199.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 1099.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 08-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/SEISA DN-M30.webp" alt="Mouse">
+                </picture>
+
+                <h3>Mouse SEISA DN-M30</h3>
+                <p>
+                    <span class="precioOriginal">s/ 35.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 17.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 09-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/Logitech K230 I.webp" alt="Teclado">
+                </picture>
+
+                <h3>Teclado Inalambrico Logitech K230</h3>
+                <p>
+                    <span class="precioOriginal">s/ 459.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 229.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 10-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/Rack SKU DS90.webp" alt="Rack">
+                </picture>
+
+                <h3>Rack Hidráulico para Monitor 13 - 27</h3>
+                <p>
+                    <span class="precioOriginal">s/ 659.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 329.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 11-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/soporte aluminio laptop.webp" alt="Soporte">
+                </picture>
+
+                <h3>Soporte Aluminio Plegable para Laptop</h3>
+                <p>
+                    <span class="precioOriginal">s/ 119.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 59.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 12-->
+            <article class="col-3">
+                <picture>
+                    <img class="img-fluid" src="img/Razer Seiren Mini.webp" alt="Microfono">
+                </picture>
+
+                <h3>Microfono Razer Seiren Mini</h3>
+                <p>
+                    <span class="precioOriginal">s/ 799.00</span><span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">s/ 399.00</span>
+                </p>
+                <button class="btn btn-secondary">Agregar al carrito</button>
+                
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        Hecho por BJLRP - 2023
+    </footer>
+
+    <!--Aqui se ejecutan las instrucciones Javascript -->
+
+    <!-- Cargando funciones de boostrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- JavaScript personalizado-->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

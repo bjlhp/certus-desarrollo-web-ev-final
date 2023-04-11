@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1 style="font-size: 2em; color: tomato;">Tecnopatia</h1> <!-- Titulo 1 -->
+        <h2>Tecnologia al alcance de tu mano</h2> <!-- Titulo 2 -->
+    </header>
+
+    <!-- Navigation-->
+    <nav>
+        <p><a href="index.html">Volver atras</a></p> <!-- Anchor (a)-->
+    </nav>
+
+    <!--Cuerpo Principal-->
+    <main>
+        <!-- Formulario de Contacto-->
+        <section id="formContacto">
+
+            <h3>Escribenos ahora</h3>
+
+            <!-- Formulario-->
+            <form action="contactoRegistro.html" method="post">
+                <div>
+                    <label for="txtNombre">Ingrese su nombre</label>
+                    <input type="text" name="txtNombre" id="txtNombre" maxlength="50" required>
+                </div>
+                <div>
+                    <label for="txtApellido">Ingrese su apellido</label>
+                    <input type="text" name="txtApellido" id="txtApellido" autocomplete="off" maxlength="50" required>
+                </div>
+                <div>
+                    <label for="txtEmail">Ingrese su correo electronico</label>
+                    <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength="128" required>
+                </div>
+                <div>
+                    <label for="numPhone">Ingrese su numero telefonico</label>
+                    <input type="tel" name="numPhone" id="numPhone" autocomplete="off" minlength="7" maxlength="13">
+                </div>
+
+                <!-- Select / Seleccion de valor -->
+                <div>
+                    <label for="txtAsunto">Seleccione su asunto</label>
+                    <select name="txtAsunto" id="txtAsunto" required>
+                        <option value="">Seleccione una opcion...</option>
+                        <option value="compraMayor">Comprar productos por mayor</option>
+                        <option value="consultaDevolucion">Consulta para devolucion de producto</option>
+                        <option value="consultaGeneral">Hacer consulta general</option>                        
+                    </select>
+                </div>
+
+                <!-- TextArea / Cuerpo de texto-->
+                
+                <div>
+                    <label for="bodyDetalle">Ingrese su mensaje</label>
+                    <textarea name="bodyDetalle" id="bodyDetalle" cols="30" rows="8" required></textarea>
+                </div>
+
+                <!-- Input Checkbox-->
+                <div>
+                    <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                    <label for="bolAutorizo">Autorizo el envio de publicidad e informacion comercial</label>
+                </div>
+
+                <!-- Input Submit / Boton de enviar-->
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+        </section>
+
+        <!--Datos de contacto-->
+        <section id="ubicanos">
+            <p>Av. Los Alamos de Punta Hermosa<br>
+                Pachacamac - Lima - Peru            
+            </p>
+            <p>Telefono: 01 234 5678 / 987 654 321</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.709847891832!2d-77.05408501538085!3d-12.065698865944789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c91a5000653d%3A0x1654d5501a2ea1e9!2sMuseo%20Larco!5e0!3m2!1ses-419!2spe!4v1679537313426!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+</body>
+</html>
